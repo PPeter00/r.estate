@@ -1,12 +1,9 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Taviraj&display=swap');
 :root{
     --color-primary:#2e8b57 ;
     --color-secondary: 	#2f4f4f !important;
     --color-accent:  #008080;
-   /* --font: 'Cormorant SC', serif;*/
-    --font2: cursive;
 }
 body{
     font-family: 'Taviraj', serif !important;
@@ -205,52 +202,64 @@ header .header{
     font-weight: 400;
 }
 
-#property-section{
+#property{
     width: 100%;
     padding: 50px 0;
     background-color: #eee;
     color: var(--color-secondary);
 }
-#property-section .text-right a{
-    color: var(--color-secondary);
-    font-size: 16px;
-    font-weight: 500;
-    transition: 1s ease;
+#property .text-right a{
+   color: var(--color-secondary);
+   font-size: 16px;
+   font-weight: 500;
+   transition: 1s ease;
 }
-#property-section .text-right a:hover{
-    columns: var(--color-primary);
-}
-#property-section #property-slider{
+#property .text-right a:hover{
+    color: var(--color-primary);
+ }
+ #property #property-slider{
+    height: 400px;
+    margin-top: 50px;
+    width: 100%;
+ }
+
+#property-slider .swiper{
+    width: 100%;
+    height: 100%;
+  }
+
+#property .swiper #property-slide{
     width: 100%;
     height: 400px;
     margin-top: 50px;
 }
 
-#property-slider .swiper-container{
+#property-slider .swiper{
     width: 100%;
     height: 100%;
 }
-#property-slider .swiper-container .swiper-slide .property-list{
+#property-slider .swiper .swiper-slide .property-list{
     padding: 10px;
     background-color: #fff;
     border-radius: 0px 30px 0px 30px !important;
     color: #000;
 }
-#property-slider .swiper-container .swiper-slide .property-list p{
+#property .swiper .swiper-slide .property-list p{
     font-weight: 500;
 }
-#property-slider .swiper-container .swiper-slide .property-list .image{
+#property .swiper .swiper-slide .property-list .image{
     width: 100%;
     height: 200px;
     overflow: hidden;
     border-radius: 0px 30px 0px 30px !important;
     margin-bottom: 10px;
 }
-#property-slider .swiper-container .swiper-slide .property-list .image img{
+#property .swiper .swiper-slide .property-list .image img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 
 #work-section{
     width: 100%;
